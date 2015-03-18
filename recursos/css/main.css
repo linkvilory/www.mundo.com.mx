@@ -1,26 +1,39 @@
-*{
-	margin:0px;
-	padding:0px;
-}
-.mainVideo{
-	width:100%;
-	height:100%;
-	display:table;
-	position:fixed;
-	top:0;
-	z-index:1;
-	display: none;
-}
-.actionVideo{
-	width:100%;
-	height:100%;
-	display:table;
-	position:fixed;
-	background:#000;
-	opacity:0.3;
-	top:0;
-	z-index:99;
-}
-.mainVideo.uno{
-	display: block;
-}
+* {
+    -webkit-appearance: none;
+    appearance: none;
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin: 0;
+    outline: medium none;
+    padding: 0
+    }
+
+.mainVideo {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: none
+    }
+
+.actionVideo {
+    background: none repeat scroll 0 0 #fff;
+    display: table;
+    height: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99
+    }
+
+.mainVideo.uno {
+    display: block
+    }
