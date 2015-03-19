@@ -1,3 +1,6 @@
+body{
+    cursor:none;
+}
 * {
     -webkit-appearance: none;
     appearance: none;
@@ -8,17 +11,16 @@
     box-shadow: none !important;
     margin: 0;
     outline: medium none;
-    padding: 0
-    }
-
+    padding: 0;
+    cursor:none;
+}
 .mainVideo {
     display: table;
     top: 0;
     z-index: 1;
     display: none;
     margin: auto;
-    }
-
+}
 .actionVideo {
     background: none repeat scroll 0 0 #fff;
     display: table;
@@ -30,8 +32,24 @@
     top: 0;
     width: 100%;
     z-index: 99
-    }
-
+}
 .mainVideo.uno {
     display: block
-    }
+}
+.header{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    margin-top: -280px;
+    display: table;
+    top: 50%;
+    margin-right: 50px;
+}     
+.footer{
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}    
