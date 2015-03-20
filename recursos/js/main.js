@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+	var totalHeight = $( window ).height();
+	var middleHeight = totalHeight/2;
+	var videoTotalHeight = 760;
+	var videoMiddleHeight = videoTotalHeight/2;
+	var calculatedHeight = middleHeight-videoMiddleHeight;
+	console.log(totalHeight);
+	console.log(middleHeight);
+	console.log(videoTotalHeight);
+	console.log(videoMiddleHeight);
+	console.log(calculatedHeight);
+
+	$(".mainVideo").css("margin-top",calculatedHeight);
+
 	$('#actionVideo').on({ 'touchstart' : function(){ 
 		$("#actionVideo").css({
 			"display":"none",
@@ -91,6 +104,21 @@ $(document).ready(function(){
 			"visibility":"visible"
 		});
 	});
+});
+
+$( window ).resize(function() {
+	var totalHeight = $( window ).height();
+	var middleHeight = totalHeight/2;
+	var videoTotalHeight = 960;
+	var videoMiddleHeight = videoTotalHeight/2;
+	var calculatedHeight = middleHeight-videoMiddleHeight;
+	console.log(totalHeight);
+	console.log(middleHeight);
+	console.log(videoTotalHeight);
+	console.log(videoMiddleHeight);
+	console.log(calculatedHeight);
+
+	$(".mainVideo").css("margin-top",calculatedHeight);
 });
 
 function getRandomVideo(){
